@@ -16,6 +16,16 @@ public class LinkedList<T> {
         }
     }
 
+    public Node<T> search(T searchData) {
+        Node<T> temp = head;
+        while(temp != null){
+            if(temp.data.equals(searchData))
+                return temp;
+            temp = temp.next;
+        }
+        return null;
+    }
+
     void add(T data){
         Node<T> node = new Node<>(data);
         if(head == null){
