@@ -8,7 +8,7 @@ public class LinkedListMain {
 
         linkedList.insert(30);
 
-        System.out.println(linkedList.popLast());
+//        System.out.println(linkedList.popLast());
 
         linkedList.display();
         System.out.println();
@@ -19,6 +19,19 @@ public class LinkedListMain {
         else{
             System.out.println("Data not found");
         }
+
+        boolean nodeInserted = linkedList.insertAfter(30,40);
+        linkedList.display();
+        if(nodeInserted){
+            System.out.println("Data inserted successfully ");
+        }
+        else{
+            System.out.println("Data not found");
+        }
+        System.out.println();
+
+
     }
 }
+
 
