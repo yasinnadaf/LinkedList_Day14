@@ -6,14 +6,14 @@ public class LinkedList<T> {
 
 
     void push(T data){
-        Node<T> node = new Node<>(data);
+        Node<T> newNode = new Node<>(data);
         if(head == null){
-            head = node;
-            tail = node;
+            head = newNode;
+            tail = newNode;
         }
         else{
-            node.next = head;
-            head = node;
+            newNode.next = head;
+            head = newNode;
         }
     }
 
@@ -49,14 +49,14 @@ public class LinkedList<T> {
     }
 
     void add(T data){
-        Node<T> node = new Node<>(data);
+        Node<T> newNode = new Node<>(data);
         if(head == null){
-            head = node;
-            tail = node;
+            head = newNode;
+            tail = newNode;
         }
         else{
-            tail.next = node;
-            tail = node;
+            tail.next = newNode;
+            tail = newNode;
         }
     }
 
