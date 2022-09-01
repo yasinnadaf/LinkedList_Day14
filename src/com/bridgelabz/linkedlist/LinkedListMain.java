@@ -30,6 +30,12 @@ public class LinkedListMain {
         }
         System.out.println();
 
+        linkedList.popElement(40);
+        linkedList.display();
+        System.out.println();
+        System.out.println(linkedList.size());
+
+
 
     }
 }
